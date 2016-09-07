@@ -1,0 +1,51 @@
+package main;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileOpener {
+
+    public static void main(String[] args) {
+
+        BufferedReader br = null;
+
+        String fileName = "test.txt";
+        
+        try {
+
+            String sCurrentLine;
+
+            br = new BufferedReader(new FileReader(fileName));
+
+            while ((sCurrentLine = br.readLine()) != null) {
+            	for(int i = 0; i < sCurrentLine.length(); i++){
+            		char letra = sCurrentLine.charAt(i);
+            		switch (letra) {
+            		case 'a' :
+            			System.out.print("d");
+            			break;
+            		case 'b' :
+            			System.out.print("e");
+            			break;
+            		case 'c' :
+            			System.out.print("f");
+            			break;
+            		default :
+            			System.out.print("x");	
+            		}
+            	}
+            	System.out.println("");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (br != null)br.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+
+    }
+}
