@@ -31,11 +31,29 @@ public abstract class Entidad {
 		return pos;
 	}
 	
-	protected void mover(int dir){
+	protected void cambiarGrafico(int dir){
 		if(this.grafico != null){
 			this.grafico.setIcon(this.image[dir]);
 			this.grafico.setBounds(this.pos.x, this.pos.y, width, height);
 		}
+	}
+	
+	public void mover(int dir){	
+		switch (dir) {
+			case 0 : //Arriba
+				pos.setLocation(pos.x, pos.y - velocidad);
+				break;
+			case 1 : //Abajo
+				pos.setLocation(pos.x, pos.y + velocidad);
+				break;
+			case 2 : //Izquierda
+				pos.setLocation(pos.x - velocidad, pos.y);
+				break;
+			case 3 : //Derecha
+				pos.setLocation(pos.x + velocidad, pos.y);
+				break;
+		}
+		cambiarGrafico(dir);
 	}
 	
 	public JLabel getGrafico(){

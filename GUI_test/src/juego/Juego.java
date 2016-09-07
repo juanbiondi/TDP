@@ -1,5 +1,6 @@
 package juego;
 
+import java.awt.event.KeyEvent;
 import java.util.Random;
 
 import gui.GUI;
@@ -23,12 +24,35 @@ public class Juego {
 	
 	public void mover(){
 		for(int i = 0; i < malos.length; i++){
-			malos[i].mover();
+			
+			// Inteligencia de los malos
+			Random r = new Random();
+			
+			int dir = r.nextInt(4);
+			
+			malos[i].mover(dir);
 		}
 	}
 	
-	public void mover(int dir){
-		jugador.mover(dir);
+	public void mover(int dir){		
+		int direccion = 0;
+		
+		switch (dir){
+			case KeyEvent.VK_UP : //Arriba
+				direccion = 0;
+				break;
+			case KeyEvent.VK_DOWN : //Abajo
+				direccion = 1;
+				break;
+			case KeyEvent.VK_LEFT : //Izquierda
+				direccion = 2;
+				break;
+			case KeyEvent.VK_RIGHT : //Derecha
+				direccion = 3;
+				break;
+		}
+		
+		jugador.mover(direccion);
 	}
 
 }
