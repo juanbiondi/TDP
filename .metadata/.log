@@ -224,3 +224,36 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-09-08 09:32:05.217 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-09-08 09:32:25.990
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Juan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.help.base 4 4 2016-09-08 09:47:21.086
+!MESSAGE Help documentation could not be indexed completely.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-09-08 09:47:21.086
+!MESSAGE Help document /org.eclipse.egit.doc/help/EGit/New_and_Noteworthy/4.3/Contributors.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-09-08 09:47:21.086
+!MESSAGE Help document /org.eclipse.egit.doc/help/JGit/New_and_Noteworthy/4.3/4.3.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-09-08 09:47:21.086
+!MESSAGE Help document /org.eclipse.egit.doc/help/JGit/New_and_Noteworthy/4.3/Contributors.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-09-08 09:47:21.087
+!MESSAGE Help document /org.eclipse.egit.doc/help/EGit/New_and_Noteworthy/4.3/Bug-Fixes.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-09-08 09:47:21.087
+!MESSAGE Help document /org.eclipse.egit.doc/help/EGit/New_and_Noteworthy/4.3/4.3.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-09-08 09:47:21.087
+!MESSAGE Help document /org.eclipse.egit.doc/help/JGit/New_and_Noteworthy/4.3/Updating-This-Document.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-09-08 09:47:21.087
+!MESSAGE Help document /org.eclipse.egit.doc/help/EGit/New_and_Noteworthy/4.3/Updating-This-Document.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-09-08 09:47:21.087
+!MESSAGE Help document /org.eclipse.egit.doc/help/JGit/New_and_Noteworthy/4.3/Bug-Fixes.html cannot be opened.
